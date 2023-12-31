@@ -38,7 +38,7 @@ export default App;
 
 > *Note: This hook works with all `HTML ELEMENTS` including `INPUT ELEMENT` as well.*
 
-###### *Example: [CodeSandbox](https://codesandbox.io/p/sandbox/use-clipboard-copier)*
+###### *Example: [CodeSandbox](https://codesandbox.io/p/sandbox/use-clipboard-copier-9zfqlg)*
 
 ###### *Checkout `use-clipboard-copier` on [npm](https://www.npmjs.com/package/use-clipboard-copier)*
 
