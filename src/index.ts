@@ -6,22 +6,32 @@ enum TagName {
 
 export const useClipBoardCopier = (hasCopiedTimer: number) => {
   const [isCopied, setIsCopied] = useState(false);
+  const [error, setError] = useState<string | null>(null);
   const clipBoardRef = useRef<HTMLInputElement | null>(null);
 
-  const copyToClipBoard = (): void => {
+  const copyToClipBoard = async (): Promise<void> => {
     if (!clipBoardRef || !clipBoardRef.current) {
       return;
-    } else if (clipBoardRef.current.tagName === TagName.INPUT) {
-      navigator.clipboard.writeText(clipBoardRef.current.value);
-    } else {
-      navigator.clipboard.writeText(clipBoardRef.current.innerText);
     }
 
-    setIsCopied(true);
-    setTimeout(() => {
+    try {
+      if (clipBoardRef.current.tagName === TagName.INPUT) {
+        await navigator.clipboard.writeText(clipBoardRef.current.value);
+      } else {
+        await navigator.clipboard.writeText(clipBoardRef.current.innerText);
+      }
+      setIsCopied(true);
+      setError(null);
+
+      setTimeout(() => {
+        setIsCopied(false);
+      }, hasCopiedTimer);
+    } catch (err) {
       setIsCopied(false);
-    }, hasCopiedTimer);
+      setError("Failed to copy to clipboard");
+      console.error("Copy to clipboard failed:", err);
+    }
   };
 
-  return { isCopied, clipBoardRef, copyToClipBoard };
+  return { isCopied, clipBoardRef, copyToClipBoard, error };
 };
