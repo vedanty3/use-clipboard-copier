@@ -1,0 +1,42 @@
+{
+  "name": "use-clipboard-copier",
+  "version": "1.0.0",
+  "description": "A react hook which helps you copy text to your clipboard.",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "publish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uuvedant4/use-clipboard-copier.git"
+  },
+  "keywords": [
+    "useClipBoardCopier",
+    "use-clipboard-copier",
+    "use-copy-to-clipboard",
+    "use-clipboard-copy",
+    "react",
+    "react-hook",
+    "javascript",
+    "typescript",
+    "nextjs"
+  ],
+  "author": "Vedant Yetekar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/uuvedant4/use-clipboard-copier/issues"
+  },
+  "homepage": "https://github.com/uuvedant4/use-clipboard-copier#readme",
+  "devDependencies": {
+    "@types/react": "^18.2.46",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "react": "^18.2.0"
+  },
+  "files": [
+    "lib/**/*"
+  ]
+}
