@@ -1,4 +1,4 @@
-## \***\*useClipBoardCopier 🪝\*\***
+## ****useClipBoardCopier 🪝****
 
 A React hook which helps you copy text to your clipboard 📋.
 
@@ -36,13 +36,13 @@ const App: React.FC = () => {
 export default App;
 ```
 
-> _Note: This hook works with all `HTML ELEMENTS` including `INPUT ELEMENT` as well._
+> *Note: This hook works with all `HTML ELEMENTS` including `INPUT ELEMENT` as well.*
 
-###### _Example: [use-clipboard-copier.vercel.app](https://use-clipboard-copier.vercel.app)_
+###### *Example: [use-clipboard-copier.vercel.app](https://use-clipboard-copier.vercel.app)*
 
-###### _Checkout `use-clipboard-copier` on [npm](https://www.npmjs.com/package/use-clipboard-copier)_
+###### *Checkout `use-clipboard-copier` on [npm](https://www.npmjs.com/package/use-clipboard-copier)*
 
-###### _Contributors_
+###### *Contributors*
 
 <div style="text-align: center; background-color: #f8f9fa; padding: 20px; border-radius: 10px; box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); display: inline-block;">
   <a href="https://github.com/uuvedant4/use-clipboard-copier/graphs/contributors" style="text-decoration: none;">
