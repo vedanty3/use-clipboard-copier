@@ -1,6 +1,6 @@
 {
   "name": "use-clipboard-copier",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "A react hook which helps you copy text to your clipboard.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
