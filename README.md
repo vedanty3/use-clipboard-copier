@@ -1,6 +1,6 @@
 ## ****useClipBoardCopier 🪝****
 
-A React hook which helps you copy text to your clipboard 📋.
+A React hook which helps you copy text to your clipboard. 📋
 
 ### Installation
 
